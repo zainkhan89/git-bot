@@ -12,8 +12,6 @@ const getRandomInt = (min, max) => {
 
 const makeCommit = n => {
 
-    if(n===0) return simpleGit().push();
-
     const DATE = moment ()
     .subtract(getRandomInt(0, 365), "days")
     .format();
@@ -30,4 +28,4 @@ const makeCommit = n => {
     })
 }
 
-makeCommit(500);
+makeCommit(200);

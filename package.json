@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/zainkhan89/git-bot/issues"
   },
-  "homepage": "https://github.com/zainkhan89/git-bot#readme"
+  "homepage": "https://github.com/zainkhan89/git-bot#readme",
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.4",
+    "simple-git": "^3.20.0"
+  }
 }

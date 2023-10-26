@@ -30,7 +30,7 @@ const makeCommit = n => {
     })
 }
 
-makeCommit(100);
+makeCommit(200);
 
 
 // const DATE = moment().subtract(5, 'd').format();

@@ -11,7 +11,7 @@ const getRandomInt = (min, max) => {
 };
 
 const makeCommit = n => {
-    if (n===0) simpleGit().push();
+    if (n===0) return simpleGit().push();
     const DATE = moment ()
     .subtract(getRandomInt(0, 365), "days")
     .format();
@@ -19,7 +19,7 @@ const makeCommit = n => {
     const date = {
         date: DATE
     };
-    console.log(DATE);
+    console.log(n);
 
     jsonfile.writeFile( FILE_PATH, date, ()=>{
         simpleGit()
@@ -28,4 +28,4 @@ const makeCommit = n => {
     })
 }
 
-makeCommit(200);
+makeCommit(100);
